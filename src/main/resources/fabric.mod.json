@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "render_toys",
+  "name": "RenderToys",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "UpcraftLP",
+      "contact": {
+        "github": "UpcraftLP",
+        "homepage": "https://upcraft.dev",
+        "twitter": "@UpcraftLP"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/UpcraftLP/render-toys",
+    "issues": "https://github.com/UpcraftLP/render-toys/issues",
+    "sources": "https://github.com/UpcraftLP/render-toys"
+  },
+  "icon": "assets/render_toys/icon.png",
+  "environment": "*",
+  "version": "${version}",
+  "depends": {
+    "fabric": "*",
+    "mesh": "*",
+    "satin": "*",
+    "fabricloader": ">=0.11.0",
+    "minecraft": "~1.16.0-0"
+  },
+  "entrypoints": {
+    "main": [
+      "dev.upcraft.rendertoys.RenderToys"
+    ],
+    "client": [
+      "dev.upcraft.rendertoys.client.RenderToysClient"
+    ]
+  },
+  "mixins": [
+    "mixins.render_toys.json"
+  ]
+}
